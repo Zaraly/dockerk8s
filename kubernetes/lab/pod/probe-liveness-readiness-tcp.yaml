@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: probe-liveness-readiness-tcp
-    image: k8s.gcr.io/goproxy:0.1
+    image: ngnix
     ports:
     - containerPort: 8080
     readinessProbe:
@@ -17,4 +17,4 @@ spec:
       tcpSocket:
         port: 8080
       initialDelaySeconds: 15
-      periodSeconds: 20
+      periodSeconds: 60
