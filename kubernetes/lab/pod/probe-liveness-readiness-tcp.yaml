@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: probe-liveness-readiness-tcp
-    image: nginx:2
+    image: nginx:1.16
     ports:
     - containerPort: 8080
     readinessProbe:
